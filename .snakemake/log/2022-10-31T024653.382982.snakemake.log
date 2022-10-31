@@ -1,0 +1,474 @@
+Building DAG of jobs...
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+find           1              1              1
+product       20              1              1
+sum           20              1              1
+total         41              1              1
+
+Select jobs to execute...
+
+[Mon Oct 31 02:46:54 2022]
+rule sum:
+    output: test/19_sum.txt
+    jobid: 38
+    wildcards: n=19
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+rule sum:
+    output: test/15_sum.txt
+    jobid: 30
+    wildcards: n=15
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+rule sum:
+    output: test/11_sum.txt
+    jobid: 22
+    wildcards: n=11
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+rule sum:
+    output: test/7_sum.txt
+    jobid: 14
+    wildcards: n=7
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+Finished job 38.
+1 of 41 steps (2%) done
+[Mon Oct 31 02:46:54 2022]
+Finished job 30.
+2 of 41 steps (5%) done
+[Mon Oct 31 02:46:54 2022]
+Finished job 22.
+3 of 41 steps (7%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:54 2022]
+rule product:
+    input: test/11_sum.txt
+    output: test/11_product.txt
+    jobid: 21
+    wildcards: n=11
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+rule product:
+    input: test/19_sum.txt
+    output: test/19_product.txt
+    jobid: 37
+    wildcards: n=19
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+rule product:
+    input: test/15_sum.txt
+    output: test/15_product.txt
+    jobid: 29
+    wildcards: n=15
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:54 2022]
+Finished job 14.
+4 of 41 steps (10%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:54 2022]
+rule product:
+    input: test/7_sum.txt
+    output: test/7_product.txt
+    jobid: 13
+    wildcards: n=7
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+Select jobs to execute...
+[Mon Oct 31 02:46:55 2022]
+Finished job 21.
+5 of 41 steps (12%) done
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/8_sum.txt
+    jobid: 16
+    wildcards: n=8
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 13.
+6 of 41 steps (15%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 37.
+7 of 41 steps (17%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 29.
+8 of 41 steps (20%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/12_sum.txt
+    jobid: 24
+    wildcards: n=12
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/1_sum.txt
+    jobid: 2
+    wildcards: n=1
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/9_sum.txt
+    jobid: 18
+    wildcards: n=9
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 16.
+9 of 41 steps (22%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 24.
+10 of 41 steps (24%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 2.
+11 of 41 steps (27%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/12_sum.txt
+    output: test/12_product.txt
+    jobid: 23
+    wildcards: n=12
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/1_sum.txt
+    output: test/1_product.txt
+    jobid: 1
+    wildcards: n=1
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/8_sum.txt
+    output: test/8_product.txt
+    jobid: 15
+    wildcards: n=8
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 18.
+12 of 41 steps (29%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 23.
+13 of 41 steps (32%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 1.
+14 of 41 steps (34%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/10_sum.txt
+    jobid: 20
+    wildcards: n=10
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/13_sum.txt
+    jobid: 26
+    wildcards: n=13
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/9_sum.txt
+    output: test/9_product.txt
+    jobid: 17
+    wildcards: n=9
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 15.
+15 of 41 steps (37%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 20.
+16 of 41 steps (39%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 26.
+17 of 41 steps (41%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/13_sum.txt
+    output: test/13_product.txt
+    jobid: 25
+    wildcards: n=13
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/18_sum.txt
+    jobid: 36
+    wildcards: n=18
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/10_sum.txt
+    output: test/10_product.txt
+    jobid: 19
+    wildcards: n=10
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 17.
+18 of 41 steps (44%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 25.
+19 of 41 steps (46%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 36.
+20 of 41 steps (49%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/18_sum.txt
+    output: test/18_product.txt
+    jobid: 35
+    wildcards: n=18
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/5_sum.txt
+    jobid: 10
+    wildcards: n=5
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/14_sum.txt
+    jobid: 28
+    wildcards: n=14
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 19.
+21 of 41 steps (51%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 35.
+22 of 41 steps (54%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 10.
+23 of 41 steps (56%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/4_sum.txt
+    jobid: 8
+    wildcards: n=4
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/20_sum.txt
+    jobid: 40
+    wildcards: n=20
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/5_sum.txt
+    output: test/5_product.txt
+    jobid: 9
+    wildcards: n=5
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 28.
+24 of 41 steps (59%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 8.
+25 of 41 steps (61%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 40.
+26 of 41 steps (63%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/4_sum.txt
+    output: test/4_product.txt
+    jobid: 7
+    wildcards: n=4
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/14_sum.txt
+    output: test/14_product.txt
+    jobid: 27
+    wildcards: n=14
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/20_sum.txt
+    output: test/20_product.txt
+    jobid: 39
+    wildcards: n=20
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 9.
+27 of 41 steps (66%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 7.
+28 of 41 steps (68%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 27.
+29 of 41 steps (71%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/6_sum.txt
+    jobid: 12
+    wildcards: n=6
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/3_sum.txt
+    jobid: 6
+    wildcards: n=3
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/16_sum.txt
+    jobid: 32
+    wildcards: n=16
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 39.
+30 of 41 steps (73%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 12.
+31 of 41 steps (76%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 6.
+32 of 41 steps (78%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/6_sum.txt
+    output: test/6_product.txt
+    jobid: 11
+    wildcards: n=6
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/3_sum.txt
+    output: test/3_product.txt
+    jobid: 5
+    wildcards: n=3
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/2_sum.txt
+    jobid: 4
+    wildcards: n=2
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 32.
+33 of 41 steps (80%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 11.
+34 of 41 steps (83%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 5.
+35 of 41 steps (85%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule sum:
+    output: test/17_sum.txt
+    jobid: 34
+    wildcards: n=17
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/16_sum.txt
+    output: test/16_product.txt
+    jobid: 31
+    wildcards: n=16
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 4.
+36 of 41 steps (88%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 34.
+37 of 41 steps (90%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/2_sum.txt
+    output: test/2_product.txt
+    jobid: 3
+    wildcards: n=2
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+rule product:
+    input: test/17_sum.txt
+    output: test/17_product.txt
+    jobid: 33
+    wildcards: n=17
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 31.
+38 of 41 steps (93%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 3.
+39 of 41 steps (95%) done
+[Mon Oct 31 02:46:55 2022]
+Finished job 33.
+40 of 41 steps (98%) done
+Select jobs to execute...
+
+[Mon Oct 31 02:46:55 2022]
+rule find:
+    input: test/1_product.txt, test/2_product.txt, test/3_product.txt, test/4_product.txt, test/5_product.txt, test/6_product.txt, test/7_product.txt, test/8_product.txt, test/9_product.txt, test/10_product.txt, test/11_product.txt, test/12_product.txt, test/13_product.txt, test/14_product.txt, test/15_product.txt, test/16_product.txt, test/17_product.txt, test/18_product.txt, test/19_product.txt, test/20_product.txt
+    output: test/perfect.txt
+    jobid: 0
+    resources: tmpdir=C:\Users\Michael\AppData\Local\Temp
+
+[Mon Oct 31 02:46:55 2022]
+Finished job 0.
+41 of 41 steps (100%) done
+Complete log: C:\Users\Michael\Documents\GitHub\Python-for-Engineers-and-Scientists\.snakemake\log\2022-10-31T024653.382982.snakemake.log
